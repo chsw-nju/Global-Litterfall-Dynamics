@@ -36,7 +36,7 @@ class Config:
     """Centralized configuration for I/O paths and algorithm parameters."""
 
     # Directories
-    INPUT_DIR = r"C:\Users\ATC\Desktop\data\stack"  # “data/sample_stack/”
+    INPUT_DIR = r"C:\Users\ATC\Desktop\data\stack"  # “data/stack/”
     OUTPUT_DIR = r"C:\Users\ATC\Desktop\data\res"
 
     # Variable Definitions
@@ -250,4 +250,5 @@ if __name__ == "__main__":
         print(f"[*] Total Execution Time: {datetime.now() - start_time}")
     except Exception as e:
         print(f"\n[FATAL ERROR] {str(e)}")
+
 
