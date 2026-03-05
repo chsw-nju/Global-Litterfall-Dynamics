@@ -36,8 +36,8 @@ class Config:
     """Centralized configuration for I/O and algorithm parameters."""
 
     # I/O Directories
-    INPUT_DIR = r"C:\Users\ATC\Desktop\data\stack"  # “data/sample_stack/”
-    OUTPUT_DIR = r"C:\Users\ATC\Desktop\data\vpa"
+    INPUT_DIR = "./data/stack"  # “data/stack/”
+    OUTPUT_DIR = "./data/vpa"
 
     # Variable Configuration (Mapped to the Stacked TIFFs)
     TARGET_Y = "RS"
@@ -290,3 +290,4 @@ if __name__ == "__main__":
         print(f"\n[+] Total Execution Time: {datetime.now() - start_time}")
     except Exception as e:
         print(f"\n[FATAL ERROR] {str(e)}")
+
