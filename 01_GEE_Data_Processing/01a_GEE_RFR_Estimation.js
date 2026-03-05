@@ -28,7 +28,7 @@ var mod15a2h = ee.ImageCollection("MODIS/061/MOD15A2H");
 var mod17a3hgf = ee.ImageCollection("MODIS/061/MOD17A3HGF");
 
 // 确保资产路径正确，将 ML_sample.xlsx 文件的 RFR 表格上传替换
-var trainingFeature = ee.FeatureCollection("users/atccuger/Global/RFR");
+var trainingFeature = ee.FeatureCollection("./RFR");
 
 // ==========================================
 // 3. 严格的质量控制 (QA Masking)
@@ -208,4 +208,5 @@ for (var m = 8; m <= 8; m++) {
         maxPixels: 1e13
     });
 }
+
 
