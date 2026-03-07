@@ -23,8 +23,8 @@ These scripts must be run within the Google Earth Engine Code Editor.
 
 ### Stage 2: Python Statistical Modeling
 These scripts process the stacked multi-temporal GeoTIFFs generated from the GEE stage.
-* **`02_FWL_Asymmetric_Decoupling.py`**: Performs pixel-wise FWL residual analysis to decouple climatic variables (LST, ET, GPP, TEM, PRE) from RS and PFL. Outputs correlation (R), sensitivity slope, and p-value maps.
-* **`03_Olson_Legacy_Effect.py`**: Calculates the Effective Substrate Index (Seff) based on Olson kinetics across time-lag windows ($w=0$ to $5$) and decay constants ($k=0.1, 0.3, 0.5$). Uses VPA to determine the marginal explanatory gain (Delta R²) of cumulative substrate memory.
+* **`02a_FWL_Asymmetric_Decoupling.py`**: Performs pixel-wise FWL residual analysis to decouple climatic variables (LST, ET, GPP, TEM, PRE) from RS and PFL. Outputs correlation (R), sensitivity slope, and p-value maps.
+* **`02b_Olson_Legacy_Effect.py`**: Calculates the Effective Substrate Index (Seff) based on Olson kinetics across time-lag windows ($w=0$ to $5$) and decay constants ($k=0.1, 0.3, 0.5$). Uses VPA to determine the marginal explanatory gain (Delta R²) of cumulative substrate memory.
 
 **Note on Python Execution:**
 Before running the Python scripts, ensure you have correctly configured the `INPUT_DIR` and `OUTPUT_DIR` paths in the `Config` class of each script to match your local data structure. The input data should be stacked GeoTIFFs formatted as `VariableName_sample.tif` (e.g., `PFL_sample.tif`, `RS_sample.tif`).
